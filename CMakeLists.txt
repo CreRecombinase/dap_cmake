@@ -22,7 +22,7 @@ target_include_directories(torus PUBLIC ${Boost_INCLUDE_DIRS})
 target_include_directories(torus PUBLIC ${GSL_INCLUDE_DIRS})
 target_include_directories(logistic PUBLIC ${Boost_INCLUDE_DIRS})
 target_include_directories(logistic PUBLIC ${GSL_INCLUDE_DIRS})
-target_link_libraries(logistic PUBLIC boost_iostreams)
+target_link_libraries(logistic PUBLIC Boost::iostreams)
 target_link_libraries(logistic PUBLIC GSL::gsl)
 target_link_libraries(torus PUBLIC logistic)
 
